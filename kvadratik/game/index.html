@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>Квадратик</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="field.css">
+    <link rel="icon" href="/main/icon.png">
+</head>
+<body>
+    <!--Меню поражения-->
+    <div class="menus">
+        <h1>Конец игры!</h1>
+        <h4>Счёт:</h4>
+        <h4 id="result"></h4>
+        <div class="menuButtonContainer">
+            <button onclick="playAgain()">Начать сначала</button>
+            <button onclick="leave()">Выйти</button>
+        </div>
+    </div>
+
+    <!--Счёт-->
+    <div class="total">
+        <h4>Счёт:</h4>
+        <h4 id="score">0</h4>
+        <br>
+        <p id="plus"></p>
+        <br>
+        <div class="gainTimer">
+            <img src="/kvadratik/images/double.png">
+            <p>15</p>
+        </div>     
+    </div>
+
+    <!--Поле-->
+    <div class="field">
+        <img id="kvadratik" src="/kvadratik/images/kvadratik.png">
+    </div>
+
+    <div class="overlay"></div>
+    <script src="script.js"></script>
+</body>
+</html>

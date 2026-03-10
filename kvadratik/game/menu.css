@@ -1,0 +1,63 @@
+/* Стили интерфейса и различных меню */
+
+/* Пауза */
+#pause {
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    border: none;
+    background-color: black;
+}
+
+/*Стили различных меню и их составляющих*/
+.menus {
+    display: none;
+    background-color: rgb(41, 43, 44);
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+}
+
+.menus button {
+    margin: 7px;
+}
+
+.messageNewRecord {
+    background-color: black;
+    color: red;
+    padding: 5px;
+    font-size: 24px;
+}
+
+/* Счёт */
+.total h4 {
+    display: inline-block;
+    margin: 0;
+    font-size: 24px;
+}
+
+#plus {
+    margin: 0;
+    font-size: 25px;
+    position: absolute;
+}
+
+/* Таймер усиления */
+.gainTimer {
+    display: none;
+    position: relative;
+    top: 25px;
+    padding: 0;
+}
+
+.gainTimer p {
+    text-align: center;
+    margin: 2px;
+}
